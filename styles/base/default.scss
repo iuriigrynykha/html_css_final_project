@@ -1,0 +1,23 @@
+html {
+    width: 100%;
+    body {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: $containerWidthLg;
+    display: flex;
+    justify-content: space-between;
+    margin: $centering;
+    color: $firstFontColor;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+    }
+}

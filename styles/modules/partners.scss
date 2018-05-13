@@ -1,0 +1,75 @@
+.partnerts {
+    max-width: 100%;
+    border-top: 1px solid #d8d8d8;
+    padding: 25px 0 31px;
+    .container {
+        @media screen and (max-width: 480px) {
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+    
+    .partnerBox {
+        width: 70px;
+        height: 65px;
+        background: url("../images/partners.png") no-repeat;
+        @media screen and (max-width: 480px) {
+            margin: 5%;
+        }
+        @media screen and (max-width: 320px) {
+            margin: 10%;
+        }
+    }
+    .secondPartner {
+        background-position: -135px 0;
+    }
+    .thirdPartner {
+        background-position: -270px 0;
+    }
+    .fourthPartner {
+        background-position: -405px 0;
+    }
+    .fifthPartner {
+        width: 110px;
+        background-position: -525px 0;
+    }
+    .sixthPartner {
+        background-position: -697px 0;
+    }
+}
+}
+
+.info {
+    @media screen and (max-width: 320px){
+        display: none;
+    }
+    background: #ececec;
+    .container {
+        color: #787878;
+        padding: 99px 0 96px;
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .infoBox {
+            width: 30%;
+            height: 158px;
+            overflow: hidden;
+            @media screen and (max-width: 480px){
+                width: 80%;
+                margin-bottom: 5%;
+            }
+            .copyrights {
+                font-style: italic;
+                color: #c5c5c5;
+                @media screen and (max-width: 480px){
+                    margin: 10px 0;
+                }
+            }
+            .infoHeader {
+                padding-bottom: 18px;
+                font-family: $leagueGothicFont, sans-serif;
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.footer {
+    padding: 51px 0;
+    background: url("../images/footerBg.jpg") no-repeat;
+    background-size: 100% 100%;
+    .container {
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+            align-items: center;
+        }
+    .main-menu {
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+        @media screen and (max-width: 480px){
+            width: 100%;
+        }
+        @media screen and (max-width: 320px){
+            display: none;
+        }
+        .menu-link {
+            display: block;
+            box-sizing: border-box;
+            height: 26px;
+            font-family: $leagueGothicFont, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: $firstFontColor;
+            &:hover {
+                border-bottom: 2px solid $additionalFontColor;
+            }
+        }
+    }
+    .madeBy {
+        font-size: 12px;
+        font-family: $openSansLight;
+        @media screen and (max-width: 480px){
+            margin-top: 5%;
+        }
+        span {
+            font-family: $openSansExtraBold;
+        }
+    }
+}
+}
